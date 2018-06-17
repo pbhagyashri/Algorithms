@@ -1,6 +1,10 @@
 const reverseInt = (int) => {
-  return parseInt(int.toString().split("").reverse().join(''))
+  let finalInt = 0
+
+  let reversedInt = parseInt(int.toString().split("").reverse().join(''))
+  
+  return int > 0 ? reversedInt : -reversedInt
 }
 
-console.log(reverseInt(500))
-console.log(reverseInt(-51))
+console.log(reverseInt(-90))
+console.log(reverseInt(-15))
