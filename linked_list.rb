@@ -9,10 +9,12 @@ end
 class LinkedList
   attr_accessor :head
 
+  #Initialize with a head node
   def initialize(headNode = nil)
     @head = headNode
   end
 
+  #insert head node or attach next node
   def insertHead(node)
     
     if !@head
