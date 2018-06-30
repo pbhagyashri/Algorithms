@@ -1,0 +1,4 @@
+function checkMagazine(magazine, note) {
+
+
+}
