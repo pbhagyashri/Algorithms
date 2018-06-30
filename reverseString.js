@@ -1,9 +1,9 @@
 //How to reverse a string using Javascript
 
 //First Approach 
-const reverseString = (string) => {
-  return string.split("").reverse().join("")
-}
+// const reverseString = (string) => {
+//   return string.split("").reverse().join("")
+// }
 
 //Second Approach 
 
@@ -11,15 +11,18 @@ const reverseString = (string) => {
   let reversed = ""
   
   string.split("").forEach(s => reversed = s + reversed)
+
+  for(let i = 0; i < string.length; i++ ) {
+    string[i] += reversed
+  }
   
   return reversed
-    
 }
 
 //Third Approach with reduce
 
-const reverseString = (str) => {
-  return str.split('').reduce( (rev, char) => char + rev, '')
-}
+// const reverseString = (str) => {
+//   return str.split('').reduce( (rev, char) => char + rev, '')
+// }
 
 console.log(reverseString("hello"))
