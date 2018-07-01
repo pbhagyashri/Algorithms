@@ -13,3 +13,14 @@ function makeAnagram(a, b) {
   var result = a.length - removeFromA.length + b.length - removeFromB.length
   return result
 }
+
+// selecting words that starts with an alphabet and ends with s. Also word can not start with a digit
+
+^[^1-9]*[a-zA-Z]*s
+
+
+//selecting web urls http://www.askoxford.com/concise_oed/train?view=uk
+http:\/\/www.[a-z.a-z]*\/[a-z_\/?=]*
+
+// detecting commenting in code - /**  **/
+^\/\** [a-z\s**]*\/$
