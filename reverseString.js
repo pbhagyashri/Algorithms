@@ -21,8 +21,8 @@ const reverseString = (string) => {
 
 //Third Approach with reduce
 
-// const reverseString = (str) => {
-//   return str.split('').reduce( (rev, char) => char + rev, '')
-// }
+const reverseString = (str) => {
+  return str.split('').reduce( (rev, char) => char + rev, '')
+}
 
 console.log(reverseString("hello"))
