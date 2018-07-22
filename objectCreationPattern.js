@@ -35,3 +35,9 @@ var peopleConstructor = function(name, age, state) {
 
 var person1 = new peopleConstructor('reva', 5, 'PA')
 console.log(person1.printPerson())
+
+//Prototype Pattern
+
+var peopleProto = function() {
+  
+}
